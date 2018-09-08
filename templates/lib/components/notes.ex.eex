@@ -18,7 +18,7 @@ defmodule <%= @mod %>.Component.Notes do
 
 
   #----------------------------------------------------------------------------
-  def init( notes, opts ) do    
+  def init( notes, opts ) do
     # Get the viewport width
     {:ok, %ViewPort.Status{size: {vp_width,vp_height}}} = opts[:viewport]
     |> ViewPort.info()
@@ -31,4 +31,4 @@ defmodule <%= @mod %>.Component.Notes do
     {:ok, %{graph: graph, viewport: opts[:viewport]} }
   end
 
-end 
+end

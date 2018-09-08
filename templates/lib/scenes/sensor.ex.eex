@@ -53,7 +53,7 @@ defmodule <%= @mod %>.Scene.Sensor do
       end, translate: {col, @font_size + 60}, button_font_size: 24)
 
     end, translate: {0, @body_offset} )
-    
+
     # NavDrop and Notes are added last so that they draw on top
     |> Nav.add_to_graph( __MODULE__ )
     |> Notes.add_to_graph( @notes )
